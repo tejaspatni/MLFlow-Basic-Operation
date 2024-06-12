@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hp/Desktop/Projects/MLFLow/mlruns/0/5ad47ed22c8e4cfc8cdc3f13a1afb987/artifacts
+end_time: 1718215328649
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5ad47ed22c8e4cfc8cdc3f13a1afb987
+run_name: intrigued-cat-748
+run_uuid: 5ad47ed22c8e4cfc8cdc3f13a1afb987
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718215323058
+status: 3
+tags: []
+user_id: hp

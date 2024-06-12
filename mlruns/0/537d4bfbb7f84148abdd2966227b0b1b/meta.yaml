@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/hp/Desktop/Projects/MLFLow/mlruns/0/537d4bfbb7f84148abdd2966227b0b1b/artifacts
+deleted_time: 1718216198354
+end_time: 1711276887804
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 537d4bfbb7f84148abdd2966227b0b1b
+run_name: able-duck-43
+run_uuid: 537d4bfbb7f84148abdd2966227b0b1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711276883141
+status: 3
+tags: []
+user_id: hp
