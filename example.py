@@ -73,8 +73,11 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        predictions = lr.predict(train_x)
-        signature = infer_signature(train_x, predictions)
+        # remote_server_uri = "https://dagshub.com/tejas_patni/MLFlow-Basic-Operation.mlflow"
+        # mlflow.set_tracking_uri(remote_server_uri)
+
+        remote_server_uri = "http://ec2-3-109-186-10.ap-south-1.compute.amazonaws.com:5000/"
+        mlflow.set_tracking_uri(remote_server_uri)
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
@@ -82,7 +85,6 @@ if __name__ == "__main__":
         if tracking_url_type_store != "file":
             # Register the model
             mlflow.sklearn.log_model(
-                lr, "model", registered_model_name="ElasticnetWineModel", signature=signature
-            )
+                lr, "model", registered_model_name="ElasticnetWineModel")
         else:
-            mlflow.sklearn.log_model(lr, "model", signature=signature)
+            mlflow.sklearn.log_model(lr, "model")
